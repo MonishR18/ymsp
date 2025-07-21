@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-4 text-center">
+            <img src="{% static 'IMG/your_photo.jpg' %}" class="img-fluid rounded-circle shadow-lg" alt="My Photo" width="250" height="250">
+        </div>
+
+        <!-- About Text -->
+        <div class="col-md-8">
+            <h2 class="mb-3">[CV 21]</h2>
+            <p class="team">
+            Team-based projects 
+            </p>
+            <p>
+            we are currently pursuing my degree at SVYASA and have a strong interest in Django and modern web technologies.
+            </p>
+            <a href="{% url 'contact' %}" class="btn btn-primary mt-3">Contact Me</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

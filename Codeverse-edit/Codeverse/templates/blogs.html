@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}blog{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">CodeVerse Blog</h2>
+
+    <div class="row">
+        <!-- Blog Post 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'IMGjpg' %}" class="card-img-top" alt="Blog Image">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Tech Talks at CodeVerse</h5>
+                    <p class="card-text">A recap of insightful tech sessions held during CodeVerse 2025 featuring industry experts and student innovators.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'IMG/blog3.jpg' %}" class="card-img-top" alt="Blog Image">
+                <div class="card-body">
+                    <h5 class="card-title">Student Voices</h5>
+                    <p class="card-text">Hear from the students who participated in CodeVerse — their experiences, challenges, and what they learned.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

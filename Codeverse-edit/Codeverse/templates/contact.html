@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%} contact {% endblock title%}
+
+{% block body %}    
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need further information, please feel free to reach out to us.</p>
+    
+    <form method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label>
+                Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="mt-3">
+            {% if success %}
+                <div class="alert alert-success" role="alert">
+                    Your message has been sent successfully!
+                </div>
+            {% endif %}
+            {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    There was an error sending your message. Please try again later.
+                </div>
+            {% endif %}
+        </div>
+    </form>
+
+{% endblock %}
+

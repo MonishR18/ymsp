@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-5">Projects</h1>
+            <p>This section showcases some of my projects.</p>
+            <ul>
+                <li>Project 1: .</li>
+                <li>Project 2: .</li>
+                <li>Project 3:  </li>
+            </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/projects.jpg' %}" class="card-img-top" alt="Projects Image">
+                <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <p class="card-text">This is a brief description of my projects.</p>
+                    <a href="{% url 'projects' %}" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

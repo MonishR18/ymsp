@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Education{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-5">Education</h1>
+            <p>This section contains information about my educational background.</p>
+            <ul>
+                <li>Bachelor of Science in Computer Science, Syvasa University, 2020-2024</li>
+                <li>Master of Science in Software Engineering, Syvasa University, 2024-2026</li>
+                <li>PhD in Artificial Intelligence, Syvasa University, 2026-2030</li>
+            </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/education.jpg' %}" class="card-img-top" alt="Education Image">
+                <div class="card-body">
+                    <h5 class="card-title">Education</h5>
+                    <p class="card-text">This is a brief description of my educational background.</p
+                    <a href="{% url 'education' %}" class="btn btn-primary">View Education</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

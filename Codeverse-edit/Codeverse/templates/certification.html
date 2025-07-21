@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/certification.jpg' %}" class="card-img-top" alt="Certification Image">
+                <div class="card-body">
+                    <h5 class="card-title">Certification</h5>
+                    <p class="card-text">This is a brief description of the certification Given by the university.</p>
+                    <a href="{% url 'certification' %}" class="btn btn-primary">View Certification</a>
+                </div>
+            </div>
+{% endblock content %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Certification Details</h1>
+        <p>This section contains detailed information about the certification.</p>
+        <ul>
+            <li>Certification Name: All in one  Certification</li>
+            <li>Issued By: Syvasa University</li>
+            <li>Date Issued: July , 2025</li>
+            <li>Expiration Date: July, 2035</li>
+        </ul>
+    </div>
+{% endblock %}
