@@ -1,0 +1,63 @@
+// src/pages/Home.jsx
+
+import React from "react";
+
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Header */}
+      <header className="flex justify-between items-center px-6 py-4 bg-white shadow">
+        <h1 className="text-2xl font-bold text-indigo-600">ShopVerse</h1>
+        <nav className="space-x-6">
+          <a href="#" className="hover:text-indigo-600">Home</a>
+          <a href="#" className="hover:text-indigo-600">Products</a>
+          <a href="#" className="hover:text-indigo-600">Cart</a>
+          <a href="#" className="hover:text-indigo-600">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-center py-20 bg-indigo-100">
+        <h2 className="text-4xl font-bold mb-4">Welcome to ShopVerse</h2>
+        <p className="text-lg mb-6">Your one-stop store for daily needs. Browse, choose and checkout!</p>
+        <a
+          href="#products"
+          className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition"
+        >
+          Shop Now
+        </a>
+      </section>
+
+      {/* Featured Products Preview */}
+      <section id="products" className="px-6 py-12">
+        <h3 className="text-2xl font-bold mb-6">Featured Products</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[1, 2, 3].map((item) => (
+            <div
+              key={item}
+              className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition"
+            >
+              <img
+                src={https://via.placeholder.com/300x200?text=Product+${item}}
+                alt={Product ${item}}
+                className="rounded mb-4"
+              />
+              <h4 className="text-lg font-semibold mb-2">Product {item}</h4>
+              <p className="text-gray-600 mb-2">₹{item * 499}</p>
+              <button className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+                View Details
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center p-4 bg-gray-100 border-t mt-8">
+        <p>© 2025 ShopVerse. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;
