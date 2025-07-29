@@ -1,0 +1,54 @@
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.product-card .product-price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background-color: #0b5ed7;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.wishlist-icon:hover {
+  color: #fb641b;
+}

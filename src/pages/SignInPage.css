@@ -1,0 +1,128 @@
+.signin-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 2000;
+}
+
+.signin-modal {
+  display: flex;
+  width: 700px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.signin-left {
+  width: 45%;
+  background: #2874f0;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signin-left h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.signin-left p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.signin-image {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.signin-right {
+  width: 55%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signin-input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.terms {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #2874f0;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.otp-btn {
+  background: #fb641b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.new-account {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #2874f0;
+}
+
+.create-account-link {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-home {
+  font-size: 13px;
+  color: #2874f0;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #333;
+}

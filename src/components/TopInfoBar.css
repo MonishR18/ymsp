@@ -1,0 +1,20 @@
+.top-info-bar {
+  background-color: #111;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+}
+
+.info-left span,
+.info-right span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.info-left span:hover,
+.info-right span:hover {
+  text-decoration: underline;
+}
