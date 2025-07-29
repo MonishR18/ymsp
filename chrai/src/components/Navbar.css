@@ -1,0 +1,258 @@
+.top-bar {
+  background-color: #834671;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+.top-bar-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top-link:hover {
+  color: #d6336c;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-radius: 0 0 18px 18px;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* was 300px */
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 70px 8px 16px; /* more right padding for icons */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 5px #d6336c;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+}
+
+.search-icon:first-of-type {
+  right: -35px; /* move mic further left */
+}
+
+.search-icon:last-of-type {
+  right: -60px; /* move camera further right */
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d6336c;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d6336c;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 120px; /* Move links further to the right */
+}
+
+.navbar-links a {
+  font-weight: bold;
+}
+
+.navbar-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-item: center;
+}
+
+.navbar-icons .warehouse-icon {
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.warehouse-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.warehouse-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #d6336c;
+}
+
+.warehouse-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+.menu-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.menu-link:hover {
+  color: #d6336c;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #d6336c;
+  transition: width 0.3s ease;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.logo-creative-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.creative-logo {
+  transition: transform 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.creative-logo:hover {
+  transform: scale(1.13) rotate(-6deg);
+  filter: drop-shadow(0 2px 8px #d6336c44);
+}
+
+.logo-tagline {
+  font-size: 13px;
+  color: #6c3483;
+  font-weight: 500;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+  font-family: 'Georgia', serif;
+  opacity: 0.85;
+}
+
+.creative-search-bar {
+  border-radius: 20px;
+  border: 1.5px solid #d6336c;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  padding-left: 16px;
+  background: #fff8fa;
+}
+
+.creative-search-bar:focus {
+  box-shadow: 0 0 8px #b2d8f7;
+  border-color: #6c3483;
+  background: #f7e6ff;
+}
+
+.logo-image,
+.creative-logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-icon-shift {
+  margin-top: 16px; /* Moves icons down, adjust as needed */
+}

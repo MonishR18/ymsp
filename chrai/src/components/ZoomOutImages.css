@@ -1,0 +1,38 @@
+.zoomout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  background-color: #454244;
+}
+
+.zoomout-image {
+  width: 200px;
+  height: 200px;
+  animation: zoomout 3s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.zoomout-delay-1 {
+  animation-delay: 0s;
+}
+
+.zoomout-delay-2 {
+  animation-delay: 1s;
+}
+
+.zoomout-delay-3 {
+  animation-delay: 2s;
+}
+
+@keyframes zoomout {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,12 @@
+.footer-section {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.footer-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
