@@ -1,0 +1,9 @@
+.wishlist-page {
+  padding: 20px;
+}
+
+.wishlist-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
