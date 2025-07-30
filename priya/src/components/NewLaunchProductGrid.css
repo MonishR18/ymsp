@@ -1,0 +1,111 @@
+.product-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-list h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Georgia', serif;
+}
+
+.animated-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* Existing modal styles */
+.product-description-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11000;
+  /* Remove cursor pointer to avoid interference */
+  cursor: default;
+}
+
+.product-description-box {
+  background-color: #fff; /* white background */
+  padding: 25px 30px 30px 30px;
+  border-radius: 12px;
+  max-width: 480px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* stronger shadow */
+  cursor: default;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111; /* darker text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 11001;
+}
+
+.product-description-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.7);
+}
+
+.product-description-box h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #000; /* black heading */
+  font-size: 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.product-description-box p strong {
+  color: #003366;
+  font-weight: 700;
+}
+
+.product-description-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.product-description-box ul li {
+  margin-bottom: 12px; /* more spacing */
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.close-button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #007bff; /* bootstrap blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
