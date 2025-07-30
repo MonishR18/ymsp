@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <Link to="/" className="logo-link">
-        <img src="/images/logo.png" alt="Logo" className="logo-image" width={ 100} />
+        <hi> <strong> WearAura </strong> </hi>
         </Link>
         <div className="search-bar-container">
           <input
